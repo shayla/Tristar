@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+padding:0;
+margin:0;
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+
+#logo {
+float:left;	
+width:100%;
+}
+
+nav {
+  width: 100%;  
+}
+ 
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+nav li a {
+    background: #444;
+    border-right: 2px solid #fff;
+    color: #fff;
+    display: block;
+    float: left;
+    font: 400 13px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 7%;
+}
+
+nav li a:hover {
+opacity:0.6;
+}
+.sixteen.columns #logo nav ul li a{
+color:#fff;	
+}
+ /*TRANSISTIONS*/
+    -webkit-transition: background 0.5s ease;
+       -moz-transition: background 0.5s ease;
+         -o-transition: background 0.5s ease;
+        -ms-transition: background 0.5s ease;
+            transition: background 0.5s ease;
+}
+ 
+/*HOVER*/
+nav li a:hover {
+    background: #222;
+}
+
+nav li:last-child a {
+    border: none;
+}
+
+/**** Container *****/
+.container .one-third.column.pdf {
+	width: 300px; 
+	border: 1px solid #ccd8dc;
+	-moz-box-shadow: inset 0px 1px 1px #FFF;
+	-webkit-box-shadow: inset 0px 1px 1px #FFF;
+	box-shadow: inset 0px 1px 1px #FFF;
+	height:277px;
+	margin-bottom:10px;
+	padding:10px;
+	height:277px; 
+	margin-left:8px;
+	background:#d5d5d5;
+}
+
+.container .one-third.column.pdf  ul li {
+	margin-bottom:7px;
+	list-style-type:none;
+	padding-left:15px;
+}
+
+.thumb {
+	height: 60px;
+	width: 60px;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+
+.thumb-link {
+height:60px;
+margin-left:80px;
+padding-top: 8%;
+}
+
+.one-third.column.pdf ul .thumb-link a {
+color:#	333;
+}
+
+#partners {
+	list-type-style:none;
+}
+
+#partners li {
+		display:inline;
+}
+
+
+
+/**** Media Queries ****/
+/* MEDIA QUERIES*/
+@media only screen and (max-width : 766px),
+only screen and (max-device-width : 766px){
+    nav li a {
+        font: 400 9px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+    }
+     
+    nav small {
+        font: 100 9px/1 Helvetica, Verdana, Arial, sans-serif;
+    }
+}
+ 
+/*SMALL*/
+nav small {
+    color: #aaa;    
+    font: 100 11px/1 Helvetica, Verdana, Arial, sans-serif;
+    text-transform: none;
+     
+}
+@media only screen and (max-width : 930px),
+only screen and (max-device-width : 930px){
+    nav li a {
+        width: 25%;
+        border-bottom: 1px solid #fff;
+        font: 400 11px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+    }
+     
+    nav li:last-child a, nav li:nth-child(4) a {
+        border-right: none;
+    }
+     
+ 
+}
